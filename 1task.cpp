@@ -8,8 +8,8 @@ int main() {
         cout << "Incorrect data" << endl;
     }
     else {
-        for (;N>0;N--) {
-            for (int k=N;k>0;k--) {
+        for (int i = N ; i>0; i--) {
+            for (int k=N ; k>=i ; k--) {
                 char Str = 'A' + k - 1;
                 cout << Str << " ";
             }
