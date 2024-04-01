@@ -1,4 +1,3 @@
-print("Enter the number of characters")
 N = 26
 if N > 26:
     print("Incorrect data")
