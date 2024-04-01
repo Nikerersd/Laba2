@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    cout << "Enter the number of characters" << endl;
-    int N;
-    cin >> N;
+    int N = 4;
     if (N>26) {
         cout << "Incorrect data" << endl;
     }

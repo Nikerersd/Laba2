@@ -1,8 +1,7 @@
 using System;
 class Program {
     static void Main(string[] args) {
-        Console.WriteLine("Enter the number of characters");
-        int N = 26;
+        int N = 4;
         if (N > 26) {
             Console.WriteLine("Incorrect data");
         }
