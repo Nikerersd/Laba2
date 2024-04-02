@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
     int N = 4;
-    if (N>26) {
+    if (N<0 || N>26) {
         cout << "Incorrect data" << endl;
     }
     else {
