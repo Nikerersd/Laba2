@@ -16,6 +16,6 @@ int main() {
     string sentence;
     cout << "Enter a string of lowercase Latin letters: ";
     getline(cin, sentence);
-    cout << boolalpha << Pangram << endl;
+    cout << boolalpha << Pangram(sentence) << endl;
     return 0;
 }
