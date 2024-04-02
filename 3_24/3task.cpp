@@ -2,6 +2,9 @@
 using namespace std;
 
 int EvenDigits(int number) {
+    if (number < 0) {
+        number = -number;
+        }
     int count = 0;
     while (number > 0) {
         int digit = number % 10;
@@ -17,16 +20,20 @@ int main() {
     int n;
     cout << "Enter the number of numbers: ";
     cin >> n;
-    cout << "Enter the numbers separated by a space: ";
-    for (int i = 0; i < n; ++i) {
-        int number;
-        cin >> number;
-        cout << EvenDigits(number);
-        if (i < n - 1) {
-            cout << " ";
+    if (n>0){
+        cout << "Enter the numbers separated by a space: ";
+        for (int i = 0; i < n; ++i) {
+            int number;
+            cin >> number;
+            cout << EvenDigits(number);
+            if (i < n - 1) {
+                cout << " ";
+            }
         }
+        cout << endl;
     }
-    cout << endl;
-
+    else {
+        cout << "Incorrect data" << endl;
+    }
     return 0;
 }
